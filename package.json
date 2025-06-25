@@ -1,0 +1,50 @@
+{
+  "name": "create-kislay-app",
+  "version": "1.0.0",
+  "description": "A CLI tool for scaffolding production-ready frontend and backend applications",
+  "main": "bin/index.js",
+  "type": "module",
+  "bin": {
+    "create-kislay-app": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "keywords": [
+    "cli",
+    "boilerplate",
+    "scaffold",
+    "react",
+    "vite",
+    "express",
+    "nodejs",
+    "frontend",
+    "backend",
+    "fullstack"
+  ],
+  "author": "Kislay",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.1.0",
+    "fs-extra": "^11.1.1",
+    "inquirer": "^8.2.6",
+    "chalk": "^4.1.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/create-kislay-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/create-kislay-app/issues"
+  },
+  "homepage": "https://github.com/yourusername/create-kislay-app#readme"
+} 
