@@ -1,7 +1,7 @@
 {
   "name": "create-kislay-app",
-  "version": "1.0.0",
-  "description": "A CLI tool for scaffolding production-ready frontend and backend applications",
+  "version": "1.1.0",
+  "description": "A CLI tool for scaffolding production-ready frontend and backend applications with enhanced UX",
   "main": "bin/index.js",
   "type": "module",
   "bin": {
@@ -22,7 +22,9 @@
     "nodejs",
     "frontend",
     "backend",
-    "fullstack"
+    "fullstack",
+    "ux",
+    "user-experience"
   ],
   "author": "Kislay",
   "license": "MIT",
@@ -41,10 +43,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/create-kislay-app.git"
+    "url": "git+https://github.com/kislay-kant-pandey/create-kislay-app.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/create-kislay-app/issues"
+    "url": "https://github.com/kislay-kant-pandey/create-kislay-app/issues"
   },
-  "homepage": "https://github.com/yourusername/create-kislay-app#readme"
+  "homepage": "https://github.com/kislay-kant-pandey/create-kislay-app#readme"
 } 
