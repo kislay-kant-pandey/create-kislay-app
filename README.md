@@ -74,22 +74,20 @@ npx create-kislay-app fullstack my-fullstack-app
 ```
 my-react-app/
 ├── public/                  # Static assets
-│   ├── src/
-│   │   ├── assets/             # Images, fonts, etc.
-│   │   ├── components/         # Reusable UI components
-│   │   ├── pages/             # Page components for routing
-│   │   ├── services/          # API calls and external services
-│   │   ├── styles/            # Global styles and CSS
-│   │   ├── App.jsx            # Main app component
-│   │   └── main.jsx           # Entry point
-│   │
-│   ├── .env                   # Environment variables
-│   ├── .env.example           # Sample env file
-│   ├── .gitignore             # Git ignore rules
-│   ├── .eslintrc.cjs          # ESLint config
-│   ├── .prettierrc            # Prettier config
-│   └── vite.config.js         # Vite configuration
-│
+├── src/
+│   ├── assets/             # Images, fonts, etc.
+│   ├── components/         # Reusable UI components
+│   ├── pages/             # Page components for routing
+│   ├── services/          # API calls and external services
+│   ├── styles/            # Global styles and CSS
+│   ├── App.jsx            # Main app component
+│   └── main.jsx           # Entry point
+├── .env                   # Environment variables
+├── .env.example           # Sample env file
+├── .gitignore             # Git ignore rules
+├── .eslintrc.cjs          # ESLint config
+├── .prettierrc            # Prettier config
+├── vite.config.js         # Vite configuration
 ├── package.json           # Dependencies and scripts
 └── README.md              # Project documentation
 ```
@@ -105,7 +103,6 @@ my-api/
 │   ├── models/           # Data models
 │   ├── routes/           # API routes
 │   └── index.js          # Entry point
-│
 ├── .env                  # Environment variables
 ├── .env.example          # Sample env file
 ├── .gitignore            # Git ignore rules
@@ -361,4 +358,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Happy Coding! 🎉**
 
-Built with ❤️ by [Your Name] 
+Built with ❤️ by [Your Name]
