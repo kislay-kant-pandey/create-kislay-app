@@ -1,7 +1,7 @@
 {
   "name": "create-kislay-app",
-  "version": "1.1.0",
-  "description": "A CLI tool for scaffolding production-ready frontend and backend applications with enhanced UX",
+  "version": "1.2.0",
+  "description": "A CLI tool for scaffolding production-ready frontend and backend applications with enhanced UX and QR code mobile access",
   "main": "bin/index.js",
   "type": "module",
   "bin": {
@@ -24,7 +24,9 @@
     "backend",
     "fullstack",
     "ux",
-    "user-experience"
+    "user-experience",
+    "qr-code",
+    "mobile-access"
   ],
   "author": "Kislay",
   "license": "MIT",

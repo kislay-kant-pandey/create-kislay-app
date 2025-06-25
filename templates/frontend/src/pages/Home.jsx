@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react'
+import QRCodeComponent from '../components/QRCode'
 import '../styles/Home.css'
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true)
   const [activeFeature, setActiveFeature] = useState(0)
   const [showNotification, setShowNotification] = useState(false)
+  const [showQRCode, setShowQRCode] = useState(false)
 
   useEffect(() => {
     // Simulate loading
@@ -27,6 +29,10 @@ const Home = () => {
   const handleGetStarted = () => {
     setShowNotification(true)
     setTimeout(() => setShowNotification(false), 3000)
+  }
+
+  const toggleQRCode = () => {
+    setShowQRCode(!showQRCode)
   }
 
   const features = [
@@ -85,8 +91,8 @@ const Home = () => {
               <button className="btn btn-primary" onClick={handleGetStarted}>
                 🚀 Get Started
               </button>
-              <button className="btn btn-secondary">
-                📚 View Docs
+              <button className="btn btn-secondary" onClick={toggleQRCode}>
+                📱 Mobile Access
               </button>
             </div>
           </div>
@@ -113,6 +119,21 @@ const Home = () => {
       
       <main className="main-content">
         <div className="container">
+          {/* QR Code Section */}
+          {showQRCode && (
+            <section className="qr-section">
+              <div className="qr-section-header">
+                <h2>📱 Mobile Development Access</h2>
+                <p>Scan the QR code below to access your app on mobile devices</p>
+              </div>
+              <QRCodeComponent 
+                size={250}
+                showInfo={true}
+                className="qr-component"
+              />
+            </section>
+          )}
+
           <section className="getting-started">
             <h2>🚀 Getting Started</h2>
             <div className="steps-container">
@@ -134,6 +155,13 @@ const Home = () => {
                 <div className="step-content">
                   <h3>Open Your Browser</h3>
                   <p>Navigate to <code>http://localhost:5173</code></p>
+                  <button 
+                    className="btn btn-secondary btn-small" 
+                    onClick={toggleQRCode}
+                    style={{ marginTop: '8px' }}
+                  >
+                    📱 Or use QR Code
+                  </button>
                 </div>
               </div>
               

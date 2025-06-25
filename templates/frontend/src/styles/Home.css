@@ -91,6 +91,11 @@
   transform: translateY(-2px);
 }
 
+.btn-small {
+  padding: 8px 16px;
+  font-size: 0.875rem;
+}
+
 /* Features Showcase */
 .features-showcase {
   margin-top: 60px;
@@ -184,6 +189,33 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+/* QR Code Section */
+.qr-section {
+  margin-bottom: 80px;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.qr-section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.qr-section-header h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 16px;
+}
+
+.qr-section-header p {
+  color: #666;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.qr-component {
+  margin: 0 auto;
 }
 
 /* Getting Started Section */
@@ -434,6 +466,10 @@
   .footer-links {
     flex-direction: column;
     gap: 15px;
+  }
+  
+  .qr-section-header h2 {
+    font-size: 2rem;
   }
 }
 
